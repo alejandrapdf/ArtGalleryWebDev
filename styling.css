@@ -1,0 +1,389 @@
+/* Parts of this code were adapted from a W3Schools example:
+https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_sidebar_over
+(Source: https://www.w3schools.com/w3css/4/w3.css retrieved in November 2021)*/
+body{
+    background-color:lightgrey;
+    font-family: 'GFS Didot', "Times New Roman", sans-serif;
+    margin: 0;
+    width: 95vw;
+    height: 95vh;
+
+}
+
+#headerBackground {
+    background-color: black;
+    padding: 1% 1%;
+    color: white;
+    text-align: left;
+    font-size: 150%;
+    z-index: 1;
+    font-weight: bold;
+    font-style: italic;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.headerButtons {
+    background-color: black;
+    color: white;
+    outline: black;
+    box-shadow: black;
+    font-size: 80%;
+    font-weight: bold;
+    transition: 0.5s;
+    display:block;
+    opacity: 0.5;
+}
+
+.headerButtons:hover {
+    opacity: 2;
+}
+
+/* Parts of this code were adapted from a W3Schools example:
+https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_sidebar_over
+(Source: https://www.w3schools.com/w3css/4/w3.css retrieved in November 2021)*/
+
+
+.sideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: darkgoldenrod;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 5%;
+}
+
+.sideNav a {
+    padding: 10% 0 10% 8%;
+    text-decoration: none;
+    font-size: 150%;
+    color: black;
+    display: block;
+    font-weight: bold;
+    font-style: italic;
+    transition: 0.5s;
+    opacity: 0.6;
+}
+
+.sideNav a:hover {
+    color: white;
+    opacity: 200;
+    transition: 0.5s;
+}
+
+.sideNav .closeNav {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 150%;
+    transition: 0.5s;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+
+}
+
+
+/* Slideshow container: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow */
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 70%;
+    position: relative;
+    transition: 0.5s;
+    margin:auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 2% 2% 2% 2%;
+    transform: translate(-50%, -50%);
+    width:35%;
+    height:20%;
+    font-weight: bold;
+    font-style: italic;
+    color:white;
+    background-color: black;
+    text-align: center;
+}
+
+.explore {
+    height:8%;
+    width:15%;
+    margin-top: 8%;
+    font-weight: bold;
+    font-style: italic;
+    color:white;
+    background-color: darkgoldenrod;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numberText {
+    color: white;
+    padding-left:2%;
+    padding-top: 2%;
+    position: absolute;
+    top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+    font-size: 150%;
+}
+
+th, td {
+    text-align: left;
+    border: 1px solid black;
+}
+
+tr:nth-child(even){background-color: white}
+th {
+    background-color: darkgoldenrod;
+    border: 1px solid black;
+}
+
+
+
+.orderButtons{
+    background-color: darkgoldenrod;
+    font-weight: bold;
+    width:100%;
+    height:50%;
+    text-align: center;
+    color: black;
+    overflow: auto;
+    opacity: 0.6;
+    transition: 0.5s;
+    font-size: 100%;
+
+}
+
+.orderButtons:hover{
+    opacity:200;
+}
+
+
+.select-submit-buttons{
+    background-color: black;
+    font-weight: bold;
+    width:40%;
+    height: 100%;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5%;
+    color: white;
+    overflow: auto;
+    opacity: 0.6;
+    transition: 0.3s;
+
+}
+
+.select-submit-buttons:hover{
+    opacity:200;
+}
+
+.loginForm {
+    background-color: darkgoldenrod;
+    color: black;
+    width:100%;
+    height:20%;
+    font-size: 150%;
+    font-weight: bold;
+    font-style: italic;
+    border: 15px black;
+    transition: 0.5s;
+    padding: 1%;
+    position: relative;
+
+}
+
+/*adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_form_on_image */
+.form {
+    position: relative;
+    float:right;
+    font-size: 100%;
+    font-weight: bold;
+    font-style: italic;
+    width: 50%;
+    text-align: center;
+    background-color: darkgoldenrod;
+}
+.formImage {
+    background-image: url("photos/formPicture.jpg");
+    width: 100%;
+    float:left;
+    position: relative;
+}
+.formTitle{
+    color:white;
+    box-shadow: 5px 10px lightgrey;
+    border-radius:50% 0 50% 0;
+    margin: 10% 10% 10% 10%;
+    padding: 5% 5% 5% 5%;
+    float: top;
+    font-size: 150%;
+    background-color: black;
+    font-style: italic;
+}
+
+input[type=text]{
+    width: 50%;
+    padding-top: 2%;
+    box-sizing: border-box;
+    border: none;
+    color:black;
+    font-style: italic;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    background-color: darkgoldenrod;
+}
+
+/* adapted from: https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_placeholder */
+::-webkit-input-placeholder { /* Edge */
+    color:black;
+    font-style: italic;
+    font-family: 'GFS Didot', "Times New Roman", sans-serif;
+    font-size: 150%;
+
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+    color:black;
+    font-style: italic;
+    font-size: 150%;
+    font-family: 'GFS Didot', "Times New Roman", sans-serif;
+}
+
+::placeholder {
+    color:black;
+    font-style: italic;
+    font-size: 150%;
+    font-family: 'GFS Didot', "Times New Roman", sans-serif;
+}
+
+/*https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_mediaquery_breakpoints*/
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .numberText{font-size: 30%;}
+    .text {font-size: 70%;}
+    .explore {font-size:10%;}
+    #main { margin: 30% auto auto;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .numberText{font-size: 50%;}
+    .text {font-size: 100%; }
+    .explore {font-size:20%;}
+    #main { margin: 20% auto auto;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .numberText{font-size: 60%;}
+    .text {font-size: 130%; }
+    .explore {font-size:40%;}
+    #main { margin: 15% auto auto;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .numberText{font-size: 70%;}
+    .text {font-size: 160%;}
+    .explore {font-size:70%;}
+    #main { margin: 15% auto auto;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .numberText{font-size: 80%;}
+    .text {font-size: 180%; }
+    .explore {font-size:90%;}
+    #main { margin: 15% auto auto;}
+}
